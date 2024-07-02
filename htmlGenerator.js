@@ -4,7 +4,7 @@
       ( global = global || self, global.HtmlGenerator = factory());
 }( this, function () {
 
-  function _gernerateHtml( listObjectDOM, parentElement ) {
+  function _generateHtml( listObjectDOM, parentElement ) {
     parentElement = parentElement || document.body
     if (typeof listObjectDOM === 'object' ? Array.isArray(listObjectDOM) : null) {
       listObjectDOM.forEach(e => {
@@ -30,7 +30,7 @@
   }
 
 
-  function _initFunctios( hg ) {
+  function _initFunctions( hg ) {
     hg.setAttributes = function( tag, attributes ) { _setAtt( tag, attributes ) }
     hg.setValue = function( tag, value ) { _setValue( tag, value ) } 
   }
@@ -38,8 +38,8 @@
   function init( HtmlGenerator ) {
     HtmlGenerator.prototype.generate = function ( listObjectDOM, parentElement ) {
       let hg = this
-      _gernerateHtml( listObjectDOM, parentElement )
-      _initFunctios(hg)
+      _generateHtml( listObjectDOM, parentElement )
+      _initFunctions(hg)
     }
   }
 
