@@ -21,6 +21,7 @@ new HtmlGenerator ([
                           tag: "div",
                           val: "Value",
                           att: {class: "class-name"},
+                          events: { 'click': function(){console.log('clicked')}, 'mouseover': function(){console.log('mouseover')}},
                           childs: [
                               {
                                   tag: "div",
