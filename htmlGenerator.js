@@ -12,7 +12,7 @@
         _setAtt(tag, e.att);
         if (e.val !== undefined) _setValue(tag, e.val);
         if (e.childs !== undefined) new HtmlGenerator(e.childs, tag);
-		if (e.events !== undefined) _setEvent(tag, e.events);
+        if (e.events !== undefined) _setEvent(tag, e.events);
         parentElement.appendChild(tag)
       });
     }
